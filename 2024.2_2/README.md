@@ -132,6 +132,11 @@ Add the variable `LIBRARY_PATH` to the file `$MGC_HOME/shared/pkgs/ccs_hls4ml/hl
 ```
 LIBRARY_PATH=/usr/lib/x86_64-linux-gnu \
     ${CC} ${CFLAGS} ${INCFLAGS} -shared ${PROJECT}.o ${PROJECT}_bridge.o -o firmware/${PROJECT}-${LIB_STAMP}.so
+
+# and a little below...
+
+LIBRARY_PATH=/usr/lib/x86_64-linux-gnu \
+    ${CC} -std=c++11 -g ${INCFLAGS} firmware/${PROJECT}.cpp ${PROJECT}_test.cpp -o ${PROJECT}.exe
 ```
 
 ### `No QuestaSIM installation found`
