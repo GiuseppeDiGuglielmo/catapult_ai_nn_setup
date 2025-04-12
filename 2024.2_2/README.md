@@ -114,7 +114,7 @@ PYTHONPATH=$MGC_HOME/shared/pkgs/ccs_hls4ml/hls4ml python $MGC_HOME/shared/examp
 
 Then:
 ```
-cd my-Catapult-test1; catapult -shell -file build_prj.tcl
+cd my-Catapult-test_asic1; catapult -shell -file build_prj.tcl
 ```
 
 If you notice any errors, please check the following solutions to known issues.
